@@ -1,0 +1,7 @@
+MIDlet-1: GniMath,/Pics/Gni.png,GniMath.GniMath
+MIDlet-Vendor: Ming
+MIDlet-Name: GniMath2.0
+MIDlet-Icon: /Pics/Gni.png
+MIDlet-Version: 2.0.0
+MicroEdition-Configuration: CLDC-1.1
+MicroEdition-Profile: MIDP-2.0

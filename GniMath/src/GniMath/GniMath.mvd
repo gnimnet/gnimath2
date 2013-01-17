@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MVDData version="1.3">
+    <DesignDocument designVersion="MIDP-2" uidCounter="110">
+        <DesignComponent id="$MobileDevice" typeid="MIDP:$MobileDevice" uid="0"/>
+        <DesignComponent id="$StartPoint" typeid="MIDP:$StartPoint" uid="1">
+            <Property name="targetDisplayable" value="FrmSplash"/>
+            <Property name="targetForwardDisplayable"/>
+        </DesignComponent>
+        <DesignComponent id="FrmPlot2D" typeid="MIDP:javax.microedition.lcdui.Form" uid="2">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction1"/>
+                <ContainerPropertyItem value="$CommandAction2"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_Plot2D_Str"/>
+                <ContainerPropertyItem value="Txt_Plot2D_Range"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="Cmd_OK" typeid="MIDP:javax.microedition.lcdui.Command" uid="3">
+            <Property name="label" value="STRING:\u786E\u5B9A"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="OK"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction1" typeid="MIDP:CommandAction" uid="4">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmPlot2D"/>
+        </DesignComponent>
+        <DesignComponent id="FrmSplash" typeid="MIDP-2:org.netbeans.microedition.lcdui.SplashScreen" uid="5">
+            <Property name="dismissCommandAction" value="$InternalCommandAction1"/>
+            <Property name="image" value="GniMath"/>
+            <Property name="fullScreen" value="true"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="$InternalCommandAction1" typeid="MIDP:InternalCommandAction" uid="6">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="FrmSplash"/>
+            <Property name="actionOrigin" value="FrmSplash"/>
+        </DesignComponent>
+        <DesignComponent id="FrmMain" typeid="MIDP:javax.microedition.lcdui.List" uid="7">
+            <Property name="choiceType" value="IMPLICIT"/>
+            <Property name="selectCommandAction" value="$SelectCommandAction1"/>
+            <Property name="indexBasedSwitch" value="true"/>
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction3"/>
+            </ContainerProperty>
+            <ContainerProperty name="elements">
+                <ContainerPropertyItem value="Midp2ListElementDC1"/>
+                <ContainerPropertyItem value="Midp2ListElementDC2"/>
+                <ContainerPropertyItem value="Midp2ListElementDC5"/>
+                <ContainerPropertyItem value="Midp2ListElementDC12"/>
+                <ContainerPropertyItem value="Midp2ListElementDC7"/>
+                <ContainerPropertyItem value="Midp2ListElementDC8"/>
+                <ContainerPropertyItem value="Midp2ListElementDC11"/>
+                <ContainerPropertyItem value="Midp2ListElementDC10"/>
+                <ContainerPropertyItem value="Midp2ListElementDC9"/>
+                <ContainerPropertyItem value="Midp2ListElementDC6"/>
+                <ContainerPropertyItem value="Midp2ListElementDC3"/>
+                <ContainerPropertyItem value="Midp2ListElementDC4"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$SelectCommandAction1" typeid="MIDP:SelectCommandAction" uid="8">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionOrigin" value="FrmMain"/>
+        </DesignComponent>
+        <DesignComponent id="Cmd_Exit" typeid="MIDP:javax.microedition.lcdui.Command" uid="9">
+            <Property name="label" value="STRING:\u9000\u51FA"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="EXIT"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Cmd_Back" typeid="MIDP:javax.microedition.lcdui.Command" uid="10">
+            <Property name="label" value="STRING:\u540E\u9000"/>
+            <Property name="priority" value="1"/>
+            <Property name="type" value="BACK"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction2" typeid="MIDP:CommandAction" uid="11">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmPlot2D"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC1" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="12">
+            <Property name="string" value="STRING:\u8868\u8FBE\u5F0F\u8BA1\u7B97"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction1"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction1" typeid="MIDP:SelectCaseCommandAction" uid="13">
+            <Property name="targetDisplayable" value="FrmStrCom"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC1"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC2" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="14">
+            <Property name="string" value="STRING:F(x)\u56FE\u8C61\u7ED8\u5236"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction2"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction2" typeid="MIDP:SelectCaseCommandAction" uid="15">
+            <Property name="targetDisplayable" value="FrmPlot2D"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC2"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction3" typeid="MIDP:CommandAction" uid="17">
+            <Property name="targetDisplayable" value="$MobileDevice"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Exit"/>
+            <Property name="actionOrigin" value="FrmMain"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Plot2D_Str" typeid="MIDP:javax.microedition.lcdui.TextField" uid="18">
+            <Property name="label" value="STRING:\u8868\u8FBE\u5F0F:\n[color]Str;..."/>
+            <Property name="string" value="STRING:[0,0,255]sin(x);cos(x);"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Plot2D_Range" typeid="MIDP:javax.microedition.lcdui.TextField" uid="19">
+            <Property name="label" value="STRING:\u7ED8\u5236\u8303\u56F4:\n(Xrange)|(Yrange)"/>
+            <Property name="string" value="STRING:(-10,10)|(-10,10)"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="FrmStrCom" typeid="MIDP:javax.microedition.lcdui.Form" uid="20">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction4"/>
+                <ContainerPropertyItem value="$CommandAction5"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_StrCom_Str"/>
+                <ContainerPropertyItem value="Txt_StrCom_Range"/>
+                <ContainerPropertyItem value="Txt_StrCom_Ans"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction4" typeid="MIDP:CommandAction" uid="21">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmStrCom"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction5" typeid="MIDP:CommandAction" uid="22">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmStrCom"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_StrCom_Str" typeid="MIDP:javax.microedition.lcdui.TextField" uid="23">
+            <Property name="label" value="STRING:\u8868\u8FBE\u5F0F\u6216\u547D\u4EE4:\nComStr OR Cmd|Data"/>
+            <Property name="string" value="STRING:x*x"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_StrCom_Ans" typeid="MIDP:javax.microedition.lcdui.TextField" uid="24">
+            <Property name="label" value="STRING:\u7ED3\u679C:"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="FrmLineXY" typeid="MIDP:javax.microedition.lcdui.Form" uid="25">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction8"/>
+                <ContainerPropertyItem value="$CommandAction9"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_LineXY_Str"/>
+                <ContainerPropertyItem value="Txt_LineXY_tInfo"/>
+                <ContainerPropertyItem value="Txt_LineXY_xyRange"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="FrmAbout" typeid="MIDP:javax.microedition.lcdui.Form" uid="27">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction10"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="About_Version"/>
+                <ContainerPropertyItem value="About_Designer"/>
+                <ContainerPropertyItem value="About_BugReport"/>
+                <ContainerPropertyItem value="stringItem1"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC3" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="28">
+            <Property name="string" value="STRING:#\u5C4F\u5E55\u4FE1\u606F#"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction3"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction3" typeid="MIDP:SelectCaseCommandAction" uid="29">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC3"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC4" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="30">
+            <Property name="string" value="STRING:#\u5173\u4E8E#"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction4"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction4" typeid="MIDP:SelectCaseCommandAction" uid="31">
+            <Property name="targetDisplayable" value="FrmAbout"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC4"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC5" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="32">
+            <Property name="string" value="STRING:F(t)\u4E8C\u7EF4\u53C2\u6570\u66F2\u7EBF\u7ED8\u5236"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction5"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction5" typeid="MIDP:SelectCaseCommandAction" uid="33">
+            <Property name="targetDisplayable" value="FrmLineXY"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC5"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction8" typeid="MIDP:CommandAction" uid="39">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmLineXY"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction9" typeid="MIDP:CommandAction" uid="40">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmLineXY"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction10" typeid="MIDP:CommandAction" uid="41">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmAbout"/>
+        </DesignComponent>
+        <DesignComponent id="About_Version" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="42">
+            <Property name="label" value="STRING:\u7A0B\u5E8F\u7248\u672C:"/>
+            <Property name="text" value="STRING:2.0.0(Final)"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="About_Designer" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="43">
+            <Property name="label" value="STRING:\u7A0B\u5E8F\u8BBE\u8BA1:"/>
+            <Property name="text" value="STRING:Ming"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LineXY_Str" typeid="MIDP:javax.microedition.lcdui.TextField" uid="45">
+            <Property name="label" value="STRING:\u8868\u8FBE\u5F0F:\n[color]fx1(t)|fy1(t);\n[color]fx2(t)|fy2(t);..."/>
+            <Property name="string" value="STRING:[0,0,255](30*t)/(1+t*t*t)|(30*t*t)/(1+t*t*t);(15*t)/(1+t*t*t)|(15*t*t)/(1+t*t*t);"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LineXY_tInfo" typeid="MIDP:javax.microedition.lcdui.TextField" uid="46">
+            <Property name="label" value="STRING:\u53C2\u91CFt\u8303\u56F4:\n(min,max)|dt"/>
+            <Property name="string" value="STRING:(-10,10)|0.1"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LineXY_xyRange" typeid="MIDP:javax.microedition.lcdui.TextField" uid="47">
+            <Property name="label" value="STRING:\u7ED8\u5236\u8303\u56F4:\n(Xrange)|(Yrange)"/>
+            <Property name="string" value="STRING:(-20,20)|(-20,20)"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="GniMath" typeid="MIDP:javax.microedition.lcdui.Image" uid="48">
+            <Property name="imageResourcePath" value="/Pics/GniMath2.0.png"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="About_BugReport" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="49">
+            <Property name="label" value="STRING:\u9519\u8BEF\u62A5\u544A(Bug Report):"/>
+            <Property name="text" value="STRING:GnimReport@gmail.com"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC7" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="50">
+            <Property name="string" value="STRING:\u8272\u5F69\u6DF1\u5EA6\u4E09\u7EF4\u56FE\u8C61\u7ED8\u5236"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction7"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction7" typeid="MIDP:SelectCaseCommandAction" uid="51">
+            <Property name="targetDisplayable" value="FrmColor3D"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC7"/>
+        </DesignComponent>
+        <DesignComponent id="FrmColor3D" typeid="MIDP:javax.microedition.lcdui.Form" uid="52">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction11"/>
+                <ContainerPropertyItem value="$CommandAction12"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_Color_Str"/>
+                <ContainerPropertyItem value="Txt_Color_Range"/>
+                <ContainerPropertyItem value="Txt_Color_Info"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction11" typeid="MIDP:CommandAction" uid="53">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmColor3D"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction12" typeid="MIDP:CommandAction" uid="54">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmColor3D"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Color_Str" typeid="MIDP:javax.microedition.lcdui.TextField" uid="55">
+            <Property name="label" value="STRING:\u8868\u8FBE\u5F0Ff(x,y):"/>
+            <Property name="string" value="STRING:sin(x)*cos(y)"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Color_Range" typeid="MIDP:javax.microedition.lcdui.TextField" uid="56">
+            <Property name="label" value="STRING:\u7ED8\u5236\u8303\u56F4:\n(Xrange)|(Yrange)"/>
+            <Property name="string" value="STRING:(-4,4)|(-4,4)"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Color_Info" typeid="MIDP:javax.microedition.lcdui.TextField" uid="57">
+            <Property name="label" value="STRING:\u53C2\u6570:\n(Zrange)|Step"/>
+            <Property name="string" value="STRING:(-1,1)|5"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC8" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="58">
+            <Property name="string" value="STRING:F(x,y)\u4E09\u7EF4\u56FE\u8C61\u7ED8\u5236"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction8"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction8" typeid="MIDP:SelectCaseCommandAction" uid="59">
+            <Property name="targetDisplayable" value="FrmPlot3D"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC8"/>
+        </DesignComponent>
+        <DesignComponent id="FrmPlot3D" typeid="MIDP:javax.microedition.lcdui.Form" uid="61">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction13"/>
+                <ContainerPropertyItem value="$CommandAction14"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_Plot3D_Str"/>
+                <ContainerPropertyItem value="Txt_Plot3D_Range"/>
+                <ContainerPropertyItem value="Txt_Plot3D_Mov"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction13" typeid="MIDP:CommandAction" uid="62">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmPlot3D"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction14" typeid="MIDP:CommandAction" uid="63">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmPlot3D"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Plot3D_Str" typeid="MIDP:javax.microedition.lcdui.TextField" uid="64">
+            <Property name="label" value="STRING:\u8868\u8FBE\u5F0Ff(x,y):"/>
+            <Property name="string" value="STRING:sin(x)*cos(y)"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Plot3D_Range" typeid="MIDP:javax.microedition.lcdui.TextField" uid="65">
+            <Property name="label" value="STRING:\u8BA1\u7B97\u8303\u56F4:\n(Xrange)|(Yrange)"/>
+            <Property name="string" value="STRING:(-4,4)|(-4,4)"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Plot3D_Mov" typeid="MIDP:javax.microedition.lcdui.TextField" uid="66">
+            <Property name="label" value="STRING:\u5E73\u79FB\u53CA\u7F29\u653E\u6BD4:\n(Xmov,Ymov)|Proportion"/>
+            <Property name="string" value="STRING:(0,0)|20"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC9" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="67">
+            <Property name="string" value="STRING:\u77E9\u9635\u8BA1\u7B97"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction9"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction9" typeid="MIDP:SelectCaseCommandAction" uid="68">
+            <Property name="targetDisplayable" value="FrmMatrix"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC9"/>
+        </DesignComponent>
+        <DesignComponent id="FrmMatrix" typeid="MIDP:javax.microedition.lcdui.Form" uid="69">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction15"/>
+                <ContainerPropertyItem value="$CommandAction16"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_Matrix_Cmd"/>
+                <ContainerPropertyItem value="Txt_Matrix_Ans"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction15" typeid="MIDP:CommandAction" uid="70">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmMatrix"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction16" typeid="MIDP:CommandAction" uid="71">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmMatrix"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Matrix_Cmd" typeid="MIDP:javax.microedition.lcdui.TextField" uid="72">
+            <Property name="label" value="STRING:\u547D\u4EE4\u53CA\u5176\u53C2\u6570:\nCommand|Data..."/>
+            <Property name="string" value="STRING:add|(1,2,3)(2,1,2)(1,3,4)"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Matrix_Ans" typeid="MIDP:javax.microedition.lcdui.TextField" uid="75">
+            <Property name="label" value="STRING:\u7ED3\u679C\u663E\u793A:"/>
+            <Property name="maxSize" value="5000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC10" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="76">
+            <Property name="string" value="STRING:\u89E3\u7EBF\u6027\u65B9\u7A0B\u7EC4"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction10"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction10" typeid="MIDP:SelectCaseCommandAction" uid="77">
+            <Property name="targetDisplayable" value="FrmLinerFunc"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC10"/>
+        </DesignComponent>
+        <DesignComponent id="FrmLinerFunc" typeid="MIDP:javax.microedition.lcdui.Form" uid="78">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction17"/>
+                <ContainerPropertyItem value="$CommandAction18"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_Func_Matrix1"/>
+                <ContainerPropertyItem value="Txt_Func_Matrix2"/>
+                <ContainerPropertyItem value="Txt_Func_Ans"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction17" typeid="MIDP:CommandAction" uid="79">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmLinerFunc"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction18" typeid="MIDP:CommandAction" uid="80">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmLinerFunc"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Func_Matrix1" typeid="MIDP:javax.microedition.lcdui.TextField" uid="81">
+            <Property name="label" value="STRING:\u65B9\u7A0B\u7EC4\u7CFB\u6570\u77E9\u9635A:"/>
+            <Property name="string" value="STRING:(2,3,1)(1,2,-1)(1,-1,3)"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Func_Matrix2" typeid="MIDP:javax.microedition.lcdui.TextField" uid="82">
+            <Property name="label" value="STRING:\u5E38\u6570\u77E9\u9635B:"/>
+            <Property name="string" value="STRING:(11)(2)(8)"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_Func_Ans" typeid="MIDP:javax.microedition.lcdui.TextField" uid="83">
+            <Property name="label" value="STRING:\u7ED3\u679C:"/>
+            <Property name="maxSize" value="3000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_StrCom_Range" typeid="MIDP:javax.microedition.lcdui.TextField" uid="84">
+            <Property name="label" value="STRING:\u79EF\u5206\u533A\u95F4\u53CA\u6B65\u957F:\n(Xrange)|Step"/>
+            <Property name="string" value="STRING:(0,5)|0.0001"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC11" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="85">
+            <Property name="string" value="STRING:F(t)\u4E09\u7EF4\u53C2\u6570\u66F2\u7EBF\u7ED8\u5236"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction11"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction11" typeid="MIDP:SelectCaseCommandAction" uid="86">
+            <Property name="targetDisplayable" value="FrmLineXYZ"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC11"/>
+        </DesignComponent>
+        <DesignComponent id="FrmLineXYZ" typeid="MIDP:javax.microedition.lcdui.Form" uid="87">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction19"/>
+                <ContainerPropertyItem value="$CommandAction20"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_LineXYZ_Str"/>
+                <ContainerPropertyItem value="Txt_LineXYZ_tInfo"/>
+                <ContainerPropertyItem value="Txt_LineXYZ_Mov"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction19" typeid="MIDP:CommandAction" uid="88">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmLineXYZ"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction20" typeid="MIDP:CommandAction" uid="89">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmLineXYZ"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LineXYZ_Str" typeid="MIDP:javax.microedition.lcdui.TextField" uid="90">
+            <Property name="label" value="STRING:\u8868\u8FBE\u5F0F:\nfx(t)|fy(t)|fz(t)"/>
+            <Property name="string" value="STRING:sin(t)|cos(t)|t*0.1"/>
+            <Property name="maxSize" value="1000"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LineXYZ_tInfo" typeid="MIDP:javax.microedition.lcdui.TextField" uid="91">
+            <Property name="label" value="STRING:\u53C2\u91CFt\u8303\u56F4:\n (min,max)|dt"/>
+            <Property name="string" value="STRING:(-10,10)|0.2"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LineXYZ_Mov" typeid="MIDP:javax.microedition.lcdui.TextField" uid="92">
+            <Property name="label" value="STRING:\u5E73\u79FB\u53CA\u7F29\u653E\u6BD4:\n(Xmov,Ymov)|Proportion"/>
+            <Property name="string" value="STRING:(0,0)|50"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC12" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="93">
+            <Property name="string" value="STRING:\u66F2\u7EBF\u62DF\u5408\u53CA\u591A\u9879\u5F0F\u63D2\u503C"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction12"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction12" typeid="MIDP:SelectCaseCommandAction" uid="94">
+            <Property name="targetDisplayable" value="FrmNearLine"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC12"/>
+        </DesignComponent>
+        <DesignComponent id="FrmNearLine" typeid="MIDP:javax.microedition.lcdui.Form" uid="95">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction21"/>
+                <ContainerPropertyItem value="$CommandAction22"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_NearLine_Str"/>
+                <ContainerPropertyItem value="Txt_NearLine_Lv"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction21" typeid="MIDP:CommandAction" uid="96">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmNearLine"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction22" typeid="MIDP:CommandAction" uid="97">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmNearLine"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_NearLine_Str" typeid="MIDP:javax.microedition.lcdui.TextField" uid="98">
+            <Property name="label" value="STRING:\u6837\u672C\u70B9\u6570\u636E:\npoint1;point2;..."/>
+            <Property name="string" value="STRING:(3,1);(1,-3);(5,2);(6,4);"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_NearLine_Lv" typeid="MIDP:javax.microedition.lcdui.TextField" uid="99">
+            <Property name="label" value="STRING:\u62DF\u5408\u6B21\u6570:"/>
+            <Property name="string" value="STRING:2"/>
+            <Property name="maxSize" value="120"/>
+            <Property name="constraints" value="5"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Midp2ListElementDC6" typeid="MIDP:GROUP-org.netbeans.modules.mvd.model.midp2.Midp2ListElementDC" uid="100">
+            <Property name="string" value="STRING:\u7EBF\u6027\u89C4\u5212"/>
+            <Property name="image"/>
+            <Property name="selected" value="false"/>
+            <Property name="commandAction" value="$SelectCaseCommandAction6"/>
+        </DesignComponent>
+        <DesignComponent id="$SelectCaseCommandAction6" typeid="MIDP:SelectCaseCommandAction" uid="101">
+            <Property name="targetDisplayable" value="FrmLinearPro"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionHolder" value="Midp2ListElementDC6"/>
+        </DesignComponent>
+        <DesignComponent id="stringItem1" typeid="MIDP:javax.microedition.lcdui.StringItem" uid="102">
+            <Property name="label" value="STRING:\u8D21\u732E\u8005\u540D\u5355:"/>
+            <Property name="text" value="STRING:Ming(fe3000@qq.com)\nZhangZhen(mfzz1134@163.com)"/>
+            <ContainerProperty name="commands"/>
+        </DesignComponent>
+        <DesignComponent id="FrmLinearPro" typeid="MIDP:javax.microedition.lcdui.Form" uid="103">
+            <ContainerProperty name="commands">
+                <ContainerPropertyItem value="$CommandAction6"/>
+                <ContainerPropertyItem value="$CommandAction7"/>
+            </ContainerProperty>
+            <ContainerProperty name="items">
+                <ContainerPropertyItem value="Txt_LinearPro_A"/>
+                <ContainerPropertyItem value="Txt_LinearPro_B"/>
+                <ContainerPropertyItem value="Txt_LinearPro_C"/>
+                <ContainerPropertyItem value="Txt_LinearPro_Ans"/>
+            </ContainerProperty>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction6" typeid="MIDP:CommandAction" uid="104">
+            <Property name="targetDisplayable"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_OK"/>
+            <Property name="actionOrigin" value="FrmLinearPro"/>
+        </DesignComponent>
+        <DesignComponent id="$CommandAction7" typeid="MIDP:CommandAction" uid="105">
+            <Property name="targetDisplayable" value="FrmMain"/>
+            <Property name="targetForwardDisplayable"/>
+            <Property name="actionSource" value="Cmd_Back"/>
+            <Property name="actionOrigin" value="FrmLinearPro"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LinearPro_A" typeid="MIDP:javax.microedition.lcdui.TextField" uid="106">
+            <Property name="label" value="STRING:\u7EA6\u675F\u6761\u4EF6\u7CFB\u6570:"/>
+            <Property name="string" value="STRING:(0,-1)(-2,1)(1,1)"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LinearPro_B" typeid="MIDP:javax.microedition.lcdui.TextField" uid="107">
+            <Property name="label" value="STRING:\u7EA6\u675F\u6761\u4EF6\u5E38\u6570:"/>
+            <Property name="string" value="STRING:(-2)(-4)(10)"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LinearPro_C" typeid="MIDP:javax.microedition.lcdui.TextField" uid="108">
+            <Property name="label" value="STRING:\u76EE\u6807\u51FD\u6570\u7CFB\u6570:"/>
+            <Property name="string" value="STRING:(-2,-1)"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+        <DesignComponent id="Txt_LinearPro_Ans" typeid="MIDP:javax.microedition.lcdui.TextField" uid="109">
+            <Property name="label" value="STRING:\u89C4\u5212\u7ED3\u679C:"/>
+            <Property name="maxSize" value="120"/>
+            <ContainerProperty name="commands"/>
+            <Property name="lazyInitialized" value="false"/>
+        </DesignComponent>
+    </DesignDocument>
+    <FlowDocument version="1.1">
+        <Node id="$MobileDevice" location="144,984" order=",$StartPoint,,,,,,,,,$ExitPoint,,,,,"/>
+        <Node id="FrmPlot2D" location="896,352" order="$CommandAction1,$CommandAction2,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmSplash" location="368,984" order="$InternalCommandAction1,,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmMain" location="656,984" order="$SelectCaseCommandAction1,$SelectCaseCommandAction2,$CommandAction3,$SelectCaseCommandAction3,$SelectCaseCommandAction4,$SelectCaseCommandAction5,$SelectCaseCommandAction6,$SelectCaseCommandAction7,$SelectCaseCommandAction8,$SelectCaseCommandAction9,$Default,$SelectCaseCommandAction10,$SelectCaseCommandAction11,$SelectCaseCommandAction12,,"/>
+        <Node id="FrmStrCom" location="896,192" order="$CommandAction4,$CommandAction5,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmLineXY" location="896,664" order="$CommandAction8,$CommandAction9,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmAbout" location="896,512" order="$CommandAction10,,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmColor3D" location="896,984" order="$CommandAction11,$CommandAction12,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmPlot3D" location="896,1144" order="$CommandAction13,$CommandAction14,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmMatrix" location="896,1296" order="$CommandAction15,$CommandAction16,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmLinerFunc" location="896,1456" order="$CommandAction17,$CommandAction18,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmLineXYZ" location="896,1616" order="$CommandAction19,$CommandAction20,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmNearLine" location="896,1776" order="$CommandAction21,$CommandAction22,,,,,,,,,$Default,,,,,"/>
+        <Node id="FrmLinearPro" location="416,856" order="$CommandAction6,$CommandAction7,,,,,,,,,$Default,,,,,"/>
+        <Link id="$StartPoint$ActionLink" path="184,960,328,960"/>
+        <Link id="$InternalCommandAction1$ActionLink" path="408,976,471,976,471,960,616,960"/>
+        <Link id="$CommandAction2$ActionLink" path="936,328,983,328,983,567,501,567,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction1$ActionLink" path="696,976,803,976,803,168,856,168"/>
+        <Link id="$SelectCaseCommandAction2$ActionLink" path="696,960,776,960,776,328,856,328"/>
+        <Link id="$CommandAction3$ActionLink" path="696,944,794,944,794,790,47,790,47,960,104,960"/>
+        <Link id="$CommandAction5$ActionLink" path="936,168,983,168,983,567,501,567,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction4$ActionLink" path="680,912,680,488,856,488"/>
+        <Link id="$SelectCaseCommandAction5$ActionLink" path="664,912,664,640,856,640"/>
+        <Link id="$CommandAction9$ActionLink" path="936,640,983,640,983,730,504,730,504,960,616,960"/>
+        <Link id="$CommandAction10$ActionLink" path="936,504,983,504,983,743,501,743,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction7$ActionLink" path="632,912,632,770,785,770,785,960,856,960"/>
+        <Link id="$CommandAction12$ActionLink" path="936,960,983,960,983,743,501,743,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction8$ActionLink" path="616,928,493,928,493,1164,805,1164,805,1120,856,1120"/>
+        <Link id="$CommandAction14$ActionLink" path="936,1120,983,1120,983,1199,501,1199,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction9$ActionLink" path="616,944,486,944,486,1272,856,1272"/>
+        <Link id="$CommandAction16$ActionLink" path="936,1272,983,1272,983,743,501,743,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction10$ActionLink" path="616,976,508,976,508,1432,856,1432"/>
+        <Link id="$CommandAction18$ActionLink" path="936,1432,983,1432,983,780,504,780,504,960,616,960"/>
+        <Link id="$SelectCaseCommandAction11$ActionLink" path="632,1014,632,1592,856,1592"/>
+        <Link id="$CommandAction20$ActionLink" path="936,1592,983,1592,983,783,501,783,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction12$ActionLink" path="648,1014,648,1752,856,1752"/>
+        <Link id="$CommandAction22$ActionLink" path="936,1752,983,1752,983,1355,501,1355,501,960,616,960"/>
+        <Link id="$SelectCaseCommandAction6$ActionLink" path="648,912,648,756,199,756,199,832,376,832"/>
+        <Link id="$CommandAction7$ActionLink" path="456,832,504,832,504,960,616,960"/>
+    </FlowDocument>
+</MVDData>
